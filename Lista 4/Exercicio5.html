@@ -1,0 +1,40 @@
+<!-- 3 - Sorteie dois números de 1 a 10. Informe quantos destes números estão entre 3 e 7 (inclusive). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4 - Exercício 5</title>
+    <script>
+        var sorteio = Math.floor(Math.random()*10) + 1;
+        var sorteio2 = Math.floor(Math.random()*10) +1;
+        var contador = 1;
+
+        if((sorteio >=3) && (sorteio <= 7)){
+            contador = contador + 1;
+
+        }else{
+            contador = contador - 1;
+        
+        }if((sorteio2 >=3) && (sorteio2 <=7)){
+            contador = contador + 1;
+        }else{
+            contador = contador - 1;
+            
+            }if(contador > 1){
+                document.write("Dois números estão entre 3 e 7");
+            
+            }else{
+                if(contador == 1){
+                    document.write("um número está entre 3 e 7");
+                }else{
+                    document.write("Nenhum número está entre 3 e 7");
+                }
+            } 
+    </script>
+</head>
+<body>
+
+</body>
+</html>

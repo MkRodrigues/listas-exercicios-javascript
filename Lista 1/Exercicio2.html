@@ -1,0 +1,43 @@
+<!-- 2. Em uma festa, homens pagam 20 reais de entrada e as mulheres pagam 17. Crie um programa que pergunta quantos homens e quantas mulheres participaram da festa e calcula o valor total arrecadado com as entradas. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Lista 1 - Exercício 2 </title>
+    <!-- <script>
+        
+        var homem = parseInt(prompt("Total de homens pagantes: "));
+        var mulher = parseInt(prompt("Total de mulheres pagantes: "));
+
+        var total1 = (homem * 20.00);
+        var total2 = (mulher * 17.00);
+        var soma = (total1 + total2);
+
+        document.write("SOMA DE INGRESSOS: " + soma);
+
+
+    </script> -->
+
+    <!-- Versão com inserção de valor de ingresso pelo usuário -->
+
+    <script>
+        
+            var homem = parseInt(prompt("Total de homens pagantes: "));
+            var mulher = parseInt(prompt("Total de mulheres pagantes: "));
+            var valor = parseFloat(prompt("Valor Ingresso Homens: R$"));
+            var valor1 = parseFloat(prompt("Valor Ingresso Mulheres: R$"));
+
+            // Cálculo
+            var total1 = (homem * valor);
+            var total2 = (mulher * valor1);
+            var soma = (total1 + total2);
+    
+            document.write("SOMA DE INGRESSOS: " + soma + " reais.");
+    
+    
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

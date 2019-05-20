@@ -1,0 +1,36 @@
+<!-- 1a - Escreva um programa que sorteia um número de 1 a 10 e dá duas chances para que o usuário acerte. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4  - Exercício 1</title>
+    <script>
+
+        var sorteio = Math.floor(Math.random()*10) + 1;
+        var palpite = parseInt(prompt("Digite um número: "));
+        var troca = 0;
+
+        if(palpite == sorteio){
+            document.write("Você Acertou de Primeira");
+        }else{
+        
+            if(palpite != sorteio){
+                troca = sorteio;
+                palpite = parseInt(prompt("Você errou, digite novamente: "));
+
+            }if(palpite == troca){
+                document.write("Você acertou sua segunda chance!");
+            
+            }else{
+                document.write("Você errou de novo, o número é: " + troca);
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

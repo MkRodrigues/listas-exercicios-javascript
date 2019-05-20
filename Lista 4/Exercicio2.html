@@ -1,0 +1,41 @@
+<!-- 1b - Escreva um programa que sorteia um número de 1 a 10, dá duas chances para que o usuário acerte, mas informa se o número sorteado é maior ou menor que o primeiro palpite. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4  - Exercício 2 </title>
+    <script>
+        var sorteio = Math.floor(Math.random()*10) + 1;
+        var palpite = parseInt(prompt("Digite um número: "
+
+        if(palpite == sorteio){
+            document.write("Você acertou!");
+        }else{
+        
+            if(palpite != sorteio){
+                
+                if(palpite > sorteio){
+                    alert("Você errou!" + "\n" + "Dica: Seu palpite: " + palpite + " ,é MAIOR que o número sorteado.");
+
+                }else{
+                    alert("Você errou!" + "\n" + "Dica: Seu palpite: " + palpite + " ,é MENOR que o número sorteado.");
+                }
+
+                palpite = parseInt(prompt("Digite novamente: "));
+                
+
+            }if(palpite == sorteio){
+                document.write("Você acertou a segunda chance!");
+            
+            }else{
+                document.write("Você errou de novo, o número é: " + sorteio);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

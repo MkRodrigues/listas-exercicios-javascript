@@ -1,0 +1,38 @@
+<!-- 6 - Crie um programa que pergunte o nome do usuário. Exiba uma mensagem diferenciada caso o nome digitado seja "Cicero", "Prático" ou "Heitor". -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 3 - Exercício 6</title>
+    <script>
+
+        var nome = prompt("Insira seu nome: ");
+        // var nome1 = "cicero";
+
+        nome = nome.toLowerCase();
+
+        if(nome == "cicero"){
+            document.write("Hey Cicero, quanto tempo!");
+
+        }else{
+            if(nome == 'pratico'){
+                document.write("Nossa que prático, Prático");
+           
+            }else{
+                if(nome === "heitor"){
+                    document.write("Você tem nome de escola!");
+
+                }else{
+                    document.write("SEU NOME NÃO CONSTA NA LISTA, ENTRADA PROIBIDA " + nome + ".");
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

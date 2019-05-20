@@ -1,0 +1,33 @@
+<!-- 4 - Escreva um programa que joga par ou ímpar com o usuário. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4 - Exercício 6</title>
+    <script>
+        var sorteio = Math.floor(Math.random()*10)+1;
+        var escolha = parseInt(prompt("Digite: 1 para PAR, 2 para ÍMPAR"));
+        var numJog = parseInt(prompt("Digite seu número"));
+
+        if(escolha == 1){
+            document.write("Você escolheu: PAR" + "<br>");
+
+        }else{
+            document.write("Você escolheu: ÍMPAR" + "<br>");
+        }
+        if((sorteio + numJog) % 2 == 0){
+            document.write("PAR VENCEU!" + "<br>");
+        
+        }else{
+            document.write("ÍMPAR VENCEU!" + "<br>")
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

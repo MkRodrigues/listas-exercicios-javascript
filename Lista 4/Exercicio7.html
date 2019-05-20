@@ -1,0 +1,35 @@
+<!-- 5 -  Crie um programa que solicita que o usuário digite uma palavra que começa com a letra "A". O programa deve então exibir uma mensagem dizendo se ele acertou ou errou. (Importante o programa aceitar que a letra A seja digitada tanto em minúsculas quanto em maiúsculas). -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4 - Exercício 7 </title>
+    <script>
+        var palavra = prompt("Adivinha a palavra que começa com A: ");
+        palavra = palavra.toLowerCase();
+
+        var index = palavra.indexOf("a");
+        var dica = "ave";
+
+        if(index == 0){
+
+            if(palavra == dica){
+                document.write("Você acertou!");
+
+            }else{
+                document.write("Você errou!");
+            }
+
+        }else{
+            document.write("A palavra digitada não começa com A");
+        }
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

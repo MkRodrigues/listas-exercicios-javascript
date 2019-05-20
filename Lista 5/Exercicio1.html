@@ -1,0 +1,28 @@
+<!-- 1 - Escreva um programa que exibe qualquer tabuada completa. O programa deve perguntar ao usuário qual tabuada ele deseja visualizar, que irá responder digitando um número de 1 a 10. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista  - Exercício </title>
+    <script>
+        var num = parseInt(prompt("TABUADA: Digite um número:"));
+        var cont = 1;
+        var calculo = 0;
+
+        document.write("TABUADA: " + num + "<br>");
+
+        for(i = 1; i<=10 ; i ++){
+            
+
+            calculo = num * cont;
+            document.write(num + " x " + cont + " = " + calculo + "<br>");
+            cont++;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

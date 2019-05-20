@@ -1,0 +1,57 @@
+<!-- 1c - Faça o mesmo programa anterior, agora com 3 palpites. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 4  - Exercício 3 </title>
+    <script>
+        var sorteio = Math.floor(Math.random()*10)+1;
+        var palpite = parseInt(prompt("Digite um número")); /*PRIMEIRA CHANCE*/
+        
+
+        if(palpite == sorteio){
+            document.write("Você acertou!");
+
+        }else{
+            if(palpite != sorteio){
+
+                if(palpite > sorteio){
+                    alert("Você errou!" + "\n" + "Dica: O palpite digitado: " + palpite + " , é MAIOR que o número sorteado.");
+
+                }else{
+                    alert("Você errou!" + "\n" + "Dica: O palpite digitado: " + palpite + " , é MENOR que o número sorteado.");
+                }
+
+                palpite = parseInt(prompt("Digite novamente")); /*SEGUNDA CHANCE*/
+
+            }if(palpite == sorteio){
+                document.write("Você acertou a 2° chance");
+
+            }else{
+
+                if(palpite > sorteio){
+                
+                alert("Você errou a 2° chance!" + "\n" + "Dica: O palpite digitado: " + palpite + " , é MAxIOR que o número sorteado.");
+           
+                }else{
+                    
+                    alert("Você errou a 2° chance!" + "\n" + "Dica: O palpite digitado: " + palpite + " , é MENOR que o número sorteado.");                    
+                }
+
+                palpite = parseInt(prompt("Digite sua 3° e última chance")); /*TERCEIRA CHANCE*/
+
+            } if(palpite == sorteio){
+                document.write("Você acertou a 3° chance!");
+
+            }else{
+                document.write("Você errou a 3° chance!" + " O número era: " + troca);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
