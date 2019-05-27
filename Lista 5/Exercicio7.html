@@ -7,24 +7,19 @@ Se for digitada uma palavra inválida, peça novamente, até que ele digite uma 
     <meta charset="UTF-8">
     
     <title>Lista 5 - Exercício 7</title>
-    <script>
+    <script> 
+    
+    do{
+        var char = prompt("Digite uma palvra que contenha 6 caracteres: ");
+        char = char.toLowerCase();
+        var tamanho = char.length;
+
+    }while(tamanho != 6){        
+        document.write("Esta palavra tem seis letras");
         
-        // var caract = prompt("Digite uma palvra que contenha 6 caracteres: ");
-        // caract = caract.toLowerCase();
+    }
 
-        do{
-            var caract = prompt("Digite uma palvra que contenha 6 caracteres: ");
-            caract = caract.toLowerCase();
-            caract = caract.length();
-
-        }while((caract.length() < 6) ||(caract.length() >6));
-
-        // while (){
-        //     caract = prompt("A palavra não contém 6 caracteres, digite novamente: ");
-        //     caract
-        // }
-
-
+    
 
     </script>
 </head>
