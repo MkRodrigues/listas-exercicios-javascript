@@ -1,0 +1,41 @@
+<!-- 4 - Crie e preencha o mesmo vetor de 100 números. Calcule a soma de todos que são menores que a média dos 10 últimos. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 8 - Exercício 4 </title>
+    <script>
+
+        var vetor = [ ];
+        var soma = 0;
+        var media = 0;
+        var resposta = 0;
+
+        for( var i = 0 ; i < 100 ; i ++){
+            vetor[i] = Math.floor(Math.random()*100)+1;
+
+            if(i >= 90){
+                soma += vetor[i];
+            }
+        }
+
+        media = soma/10;
+
+        for(var i = 0; i < 100; i++){
+            
+            if(vetor[i] < media){
+                
+                resposta += vetor[i];
+            }
+        }
+
+        document.write("A soma com base na média dos dez últimos valores é de: " + resposta); 
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

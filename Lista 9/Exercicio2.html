@@ -1,0 +1,40 @@
+<!-- 2 - Crie uma matriz 10x10 de caracteres. Atribua uma letra "B" a todos os elementos da matriz. Atribua então o caracter "8" a um elemento randômico da matriz. Exiba a matriz na tela. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 9 - Exercício 2 </title>
+    <script>
+        var matriz = [];
+        var sorteio = 0;
+
+        for (var i = 0; i < 5; i++){
+            matriz [i] = [];
+            for(var j = 0; j < 5; j++){
+                matriz [i][j] = Math.floor(Math.random()*10)+1;
+            }
+        }
+
+        // Consegui com que me sorteie uma linha da matriz ao invez de uma posição da mesma
+
+        sorteio = matriz[Math.floor(Math.random()*matriz.length)];
+        var final = Math.random()*sorteio.length;
+
+        var final1 = 
+            document.write(sorteio);
+
+        for(var i =  0; i < 5; i++){
+            for(var j = 0; j < 5; j ++){
+                document.write(matriz[i][j] + " ");
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- 1 - Escreva uma função chamada MAX( ) que recebe dois números inteiros e retorna o maior deles.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lista 10 - Exercício 1 </title>
+    <script>
+
+        function max(a =0, b=0){
+            if(a > b){
+                return a;
+            }else{
+                return b;
+            }
+        }
+
+        function pedirDados(a,b){
+            a = parseInt(prompt("Digite um número: "));
+            b = parseInt(prompt("Digite um número: "));
+
+            return a, b;
+        }
+
+
+        //CHAMADA DE FUNÇÃO
+        var teste = pedirDados();
+        var maior = max(teste);
+        document.write(maior);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
